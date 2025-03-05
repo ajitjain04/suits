@@ -25,4 +25,16 @@ class Main {
         player2.showHand();
         player3.showHand();
     }
+
+    public static void distributeCards(Deck deck, Player... players) {
+        int cardsPerPlayer = 5;
+
+        for (int i = 0; i < cardsPerPlayer; i++) {
+            for (Player player : players) {
+                if (deck.deck.size() > 0) {
+                    player.receiveCard(deck.deck.remove(0));
+                }
+            }
+        }
+    }
 }
