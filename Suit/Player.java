@@ -14,4 +14,8 @@ class Player {
     public void receiveCard(Card card) {
         hand.add(card);
     }
+
+    public void showHand() {
+        System.out.println(name + "'s hand: " + hand);
+    }
 }
