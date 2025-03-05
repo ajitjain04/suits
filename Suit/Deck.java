@@ -30,4 +30,13 @@ class Deck{
 	public void shuffleDeck(){
 		Collections.shuffle(deck);
 	}
+
+	
+	public List<Card> pickTwoRandomCards() {
+        	List<Card> pickedCards = new ArrayList<>();
+        	Random random = new Random();
+        	pickedCards.add(deck.get(random.nextInt(deck.size())));
+        	pickedCards.add(deck.get(random.nextInt(deck.size())));
+        	return pickedCards;
+    }
 }
