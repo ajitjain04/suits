@@ -39,4 +39,6 @@ class Deck{
         	pickedCards.add(deck.get(random.nextInt(deck.size())));
         	return pickedCards;
     }
+
+	
 }
